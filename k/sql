@@ -1,0 +1,5 @@
+select u.*
+from users as u
+join orders as o on o.user_id = u.id
+group by u.id
+order by lower(u."name"),u.id asc;
